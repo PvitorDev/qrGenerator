@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #DC0779;
+}
+
+.wrapper {
+    height: 250px;
+    background: rgb(255, 255, 255);
+    max-width: 420px;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.wrapper .form {
+    margin: 20px 0 30px;
+
+}
+
+
+h1 {
+    font-size: 25;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 5px;
+    color: #8a8a8a;
+    font-size: 15px;
+}
+
+input,
+button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+input {
+    font-size: 20px;
+    padding: 0 18px;
+    border: 1px solid #b5b5b5;
+}
+button {
+    cursor: pointer;
+    font-size: 21px;
+    color: white;
+    background-color: #DC0779;
+}
+
+
+.qrCodeImg{
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+.wrapper.active {
+    height: 550px;
+}
+.wrapper.active .qrCodeImg{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
