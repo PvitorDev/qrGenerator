@@ -1,0 +1,1 @@
+https://pvitordev.github.io/qrGenerator/
